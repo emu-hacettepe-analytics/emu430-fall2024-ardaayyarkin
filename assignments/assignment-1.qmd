@@ -2,14 +2,73 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
+# ASSIGNMENT 1
 
-```{r}
-1 + 1
+\(a\) Question For Cem Vardar
+
+"How do you think combining knowledge in data science and operations research can create a greater impact?"
+
+**Answer:**\
+Combining data science and operations research can create a powerful synergy, allowing for data-driven, optimized decision-making processes. Operations research provides tools and methods for optimizing complex systems, while data science brings the ability to analyze large datasets and extract meaningful insights. Together, they enable more accurate predictions, improved resource allocation, and streamlined processes. For example, data science can help identify patterns and trends in customer demand, and operations research can use this information to optimize supply chain operations. By integrating these fields, organizations can make more informed, efficient, and proactive decisions, ultimately leading to increased efficiency and competitive advantage.
+
+## (b) R Questions
+
+```         
+library(dslabs)
 ```
 
-My first assignment has two parts.
+```{r}
+library(dslabs)
+data("polls_us_election_2016")
 
-## (a)
 
-## (b)
+```
+
+```{r}
+head(polls_us_election_2016, 10)
+```
+
+```{r}
+total_na_count <- sum(is.na(polls_us_election_2016))
+print(total_na_count)
+```
+
+```{r}
+birth_year <- 2002
+first_name <- "Arda"
+birth_date <- as.Date(paste(birth_year, "02", "13", sep = "-"))  # February 13 as the replacement date
+
+```
+
+```{r}
+newpolls <- polls_us_election_2016
+newpolls[] <- lapply(newpolls, function(x) {
+  if (is.numeric(x)) {
+    # Replace NA in numeric columns with birth year
+    replace(x, is.na(x), birth_year)
+  } else if (is.character(x)) {
+    # Replace NA in character columns with first name
+    replace(x, is.na(x), first_name)
+  } else if (is.factor(x)) {
+    # Convert factor to character, replace NA, then convert back to factor
+    x <- as.character(x)
+    x <- replace(x, is.na(x), first_name)
+    as.factor(x)
+  } else if (inherits(x, "Date")) {
+    # Replace NA in date columns with birth date
+    replace(x, is.na(x), birth_date)
+  } else {
+    # Leave other types as is
+    x
+  }
+})
+
+# Display the first 10 rows of the modified dataset
+head(newpolls, 10)
+
+# Check remaining NA values in the modified dataset
+remaining_na_count <- sum(is.na(newpolls))
+print(remaining_na_count)
+
+##WITH HELP FROM CHATGPT
+```

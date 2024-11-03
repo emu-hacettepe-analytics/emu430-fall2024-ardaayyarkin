@@ -3,28 +3,73 @@ title: "About Me"
 sidebar: false 
 ---
 
+My CV is [here](/ABOUTME/CVENSON.pdf).
+
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2021-Ongoing
+-   ERASMUS, Wirtschaftsingeniurwesen, RWTH Aachen University, Germany, 2022-2023
 
 # Work Experience
 
 ## Employements
 
-1.  Firm xxx, position xx, year xxx
+1.  J.W Marriot Aspen Viewline U.S.A, Waiter, 2024
 
-2.  Firm yyy, position yyy, year yyy
+2.  D'Angelico Guitars Aspen U.S.A, Sales Associate, 2024
+
+3.  Mezzaluna Aspen U.S.A, Waiter, 2024
+
+4.  Limelight Aspen U.S.A, Waiter, 2024
+
+5.  Aspen Public House U.S.A, Waiter, 2024
+
+6.  Stranahans Whiskey Lodge Aspen U.S.A, Waiter, 2024
 
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
-
-2.  Firm bbb, position yyy, year yyy
+1.  Aras Kargo, Operational Excellence and Logistics Optimization, 2023
 
 # Projects
 
+**Created and Founded [*kleopsbeauty.com*](https://emu-hacettepe-analytics.github.io/emu430-fall2024-ahmetkgurel/kleopsbeauty.com)*- 2024***
+
+![](ABOUTME/KLEOPS%20LOGO%20200X60.png)
+
+An e-commerce venture dedicated to women’s beauty.
+
+**Eczacıbaşı Graduation Project**
+
+![](ABOUTME/eczacibasi-site-gorsel.webp){width="140"}
+
+Machine Learning, Business Process Optimization
+
+**UPS Research Project**
+
+![](ABOUTME/UPS.png){width="148"}
+
+Operational Excellence
+
 # Competencies
 
-R, Quarto, Git, Python
+R, Quarto, Git, Python, SQL,
+
+# Languages
+
+English - Excellent (C1)
+
+German - Intermediate (B1)
+
+Turkish - Native
+
+Spanish - Beginner(A1)
 
 # Hobbies
+
+Music Producer
+
+Vocal and Lead Guitarist
+
+Basketball
+
+Hiking and Camping
